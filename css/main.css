@@ -1,0 +1,370 @@
+@import "./common.css";
+@import "./footer.css";
+@import "./heder.css";
+
+/* section1 */
+main {
+  background-color: var(--main-color);
+}
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 135px;
+}
+
+.watch-box {
+  width: 354px;
+  height: 239px;
+  display: flex;
+  gap: 26px;
+  margin-top: 73px;
+
+  padding: 45px 28px 0px 40px;
+  background: #f6f6f6;
+  border-radius: 22px;
+}
+
+.watch-box h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1e1d1d;
+}
+.watch-box p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8e99;
+}
+
+@media (max-width: 1150px) {
+  .box {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .watch-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* section2 */
+
+/* section2 */
+.watch-card {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+}
+
+.content h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--btn-color);
+}
+.content h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--content-color);
+}
+.card {
+  position: relative;
+  width: 334px;
+  height: 337px;
+  padding: 29px 43px;
+  background: #f6f6f6;
+  margin-bottom: 150px;
+  margin-top: 30px;
+}
+
+.uil1 {
+  color: black;
+}
+.past ul {
+  display: flex;
+  margin-top: 5px;
+  padding-left: 65px;
+  gap: 5px;
+}
+.past h1 {
+  margin-top: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #1e1d1d;
+}
+
+.nomer {
+  margin-top: 5px;
+  display: flex;
+  gap: 2px;
+}
+.nomer h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120.5%;
+  text-align: center;
+  color: #8b8e99;
+  mix-blend-mode: normal;
+  text-decoration: line-through;
+  padding-left: 30px;
+}
+.nomer h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  line-height: 120.5%;
+  color: #000000;
+}
+.uil4 {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  color: white;
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  padding: 7px 7px;
+}
+.uil3 {
+  position: absolute;
+  top: 55px;
+  right: -30px;
+  color: white;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  padding: 7px 7px;
+}
+.uil3 {
+  opacity: 0;
+}
+.card:hover .uil3 {
+  opacity: 1;
+  right: 15px;
+  transition: 1s;
+}
+
+.uil4 {
+  opacity: 0;
+}
+.card:hover .uil4 {
+  opacity: 1;
+  right: 15px;
+  transition: 1s;
+}
+
+.nomer1 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  line-height: 120.5%;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.but {
+  text-align: center;
+}
+.but button {
+  padding: 10px 40px;
+  color: var(--input-color);
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  background: var(--btn-color);
+  border-radius: 15px;
+}
+
+@media (max-width: 1150px) {
+  .watch-card {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+}
+@media (max-width: 755px) {
+  .watch-card {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+}
+
+/* section3 */
+.content2 {
+  margin-top: 145px;
+}
+.content2 h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--btn-color);
+}
+.content2 h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--content-color);
+}
+.splide__list {
+  gap: 20px;
+  border-radius: 10px;
+}
+.splide__slide {
+  background-color: #f6f6f6;
+  width: 524px;
+  gap: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 239px;
+
+  padding: 30px 34px;
+  border-radius: 10px;
+}
+.splide__slide ul {
+  display: flex;
+}
+.splide__slide h1 {
+  margin-top: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1e1d1d;
+}
+.splide__slide p {
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8e99;
+}
+
+.slid {
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  .splide {
+    display: none;
+  }
+}
+
+/* section4 */
+#last {
+  margin-top: 50px;
+}
+.fot-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bek-color);
+  border-radius: 10px;
+}
+.chap h1 {
+    width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1e1d1d;
+}
+.chap p {
+    width: 100%;
+    margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8e99;
+}
+.chap form {
+position: relative;
+}
+.chap input {
+    margin-top: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  padding: 19px 140px 20px 30px;
+}
+.left {
+    margin: 43px 110px 43px 0;
+}
+.chap {
+    margin-left:97px ;
+}
+.chap button {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: var(--btn-color);
+    width: 30%;
+    padding: 12px 40px;
+}
+
+@media (max-width:950px){
+    .fot-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+@media (max-width:400px) {
+    .chap input {
+       width: 30%;
+    }
+    .chap button {
+        width: 10%;
+    }
+    .left img {
+        width: 100%;
+        margin-left: 100px;
+    }
+}

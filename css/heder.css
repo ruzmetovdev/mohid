@@ -1,0 +1,282 @@
+header {
+  background: var(--heder-color);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--heder-color);
+  transition: 0.5s;
+  z-index: 2;
+}
+nav {
+  padding: 30px 0;
+}
+
+.navbar-shrink {
+  padding: 20px 0;
+}
+.icon {
+  display: flex;
+}
+.icon .switch {
+  margin-top: 10px;
+}
+
+/* toggl */
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+
+  align-items: center;
+  background-color: var(--content-color);
+  transition: 0.5s;
+  display: block;
+}
+#navbar-close {
+  background-color: transparent;
+  border: none;
+  display: none;
+  z-index: 1;
+}
+#navbar-open {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+/* drop  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--content-color);
+  font-size: 20px;
+  min-width: 100px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 10px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* nav  */
+.icon .uil {
+  margin-left: 15px;
+}
+
+.uil {
+  font-size: 20px;
+  color: var(--input-color);
+}
+
+.navigey {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--input-color);
+}
+
+.nav ul {
+  display: flex;
+  grid-gap: 27px;
+}
+
+.nav a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--p-color);
+}
+
+@media (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  #navbar-responsive .nav a:hover {
+    color: red;
+    padding: 15px;
+  }
+
+  #navbar-responsive .nav {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    display: block;
+  }
+
+  #navbar-responsive .nav ul {
+    display: block;
+  }
+
+  #navbar-close {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    top: 10px;
+    display: block;
+  }
+  #navbar-open {
+    display: block;
+  }
+}
+
+/* section hed  */
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hed-img img {
+  margin-top: 172px;
+  margin-bottom: 142px;
+}
+.hed-content h1 {
+  margin-top: 224px;
+  width: 69%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 125.5%;
+  color: var(--input-color);
+}
+.hed-content p {
+  padding-top: 20px;
+  width: 70%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: var(--p-color);
+  padding-bottom: 47px;
+}
+.inpicn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: var(--btn-color);
+  font-size: 20px;
+  z-index: 1;
+}
+.input button {
+  position: absolute;
+  top: 7px;
+  right: 200px;
+  border: none;
+  background-color: var(--btn-color);
+  color: var(--input-color);
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.input form {
+  position: relative;
+}
+
+.hed-content input {
+  outline: none;
+  width: 70%;
+  padding: 19px 0px 19px;
+  background: var(--input-color);
+  border-radius: 15px;
+}
+
+@media (max-width: 900px) {
+  .hed-img img {
+    width: 100%;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hed-content h1 {
+    width: 100%;
+  }
+
+  .hed-content p {
+    width: 100%;
+  }
+}
+
+@media (max-width:800px) {
+  .hed-content button {
+    position: static;
+  }
+  .hed-content {
+    flex-direction: column;
+  }
+  .inpicn {
+   position:absolute;
+   left: 80px;
+  }
+}
+/* chik */
+.switch input {
+  margin-right: 10px;
+  width: 40px;
+  background-color: var(--toggle-color);
+  padding: 2.5px 5px;
+  height: 20px;
+  border-radius: 40px;
+  appearance: none;
+}
+.wis {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch input::after {
+  content: "";
+  display: inline-block;
+  background-color: white;
+  width: 15px;
+  border-radius: 30px;
+  height: 15px;
+  transition: 0.5s;
+}
+
+.switch input:checked::after {
+  margin-left: 16px;
+  background-color: white;
+  color: var(--heder-color);
+  transition: 0.5s;
+}
+.switch input:checked {
+  background-color: black;
+}
+#dark-light {
+  border: none;
+  background-color: transparent;
+}
+
+.light {
+  --main-color: black;
+}
+
+.light  {
+  color: white !important;
+}
